@@ -42,7 +42,6 @@ Fitur Admin
   - CRUD data destinasi wisata
   - Melihat data booking
   - Melihat data pembayaran
-  - Monitoring aktivitas sistem
     
 ## 4. Teknologi yang digunakan
 Framework dan tools yang digunakan:
@@ -69,9 +68,9 @@ Tabel utama:
   - bookings
   - visitors
   - payments
-  - sessions
     
 Tabel bawaan Laravel:
+  - sessions
   - cache
   - cache_locks
   - jobs
@@ -105,9 +104,9 @@ Tabel bawaan Laravel:
 
 #### 1. Clone Repository
 
-   git clone https://github.com/username/destigo.git
+   git clone https://github.com/cutfarah/Project_UAS_PBW.git
 
-   cd destigo
+   cd Project_UAS_PBW
 
 #### 2. Install Dependency
 
@@ -116,7 +115,7 @@ Tabel bawaan Laravel:
 
 #### 3. Copy File Environment
    
-    cp .env.example .env
+    copy .env.example .env
 
 #### 4. Generate Application Key
 
@@ -135,12 +134,9 @@ Tabel bawaan Laravel:
 
 #### 6. Import Database
 
-    Import file:
-  
-    destigo_db.sql
-  
-    atau jalankan migration:
-  
+    Jika menggunakan file SQL, import destigo_db.sql melalui phpMyAdmin.
+    
+    Atau jika ingin membuat database dari migration:
     php artisan migrate
 
 #### 7. Buat Storage Link
@@ -158,17 +154,15 @@ Tabel bawaan Laravel:
 
 ## 8. Akun Demo
 
-  Admin
+#### Admin
 
 Email: admin@gmail.com
 
 Password: destigo123
 
-## 9. Struktur Folder Project
+## 9. Cara Penggunaan
 
-## 10. Cara Penggunaan
-
-1. User
+#### User
   - Register akun baru
   - Login ke sistem
   - Pilih negara tujuan
@@ -179,7 +173,7 @@ Password: destigo123
   - Dapatkan e-ticket
     
     
-2. Admin
+#### Admin
   - Login sebagai admin
   - Kelola data negara
   - Kelola data destinasi
@@ -187,7 +181,7 @@ Password: destigo123
   - Pantau pembayaran user
   - Lihat statistik sistem
 
-## 11. Author
+## 10. Author
 Nama: Cut Farah Salsabila
 
 NPM: 2408107010100

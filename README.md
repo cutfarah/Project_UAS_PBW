@@ -1,59 +1,195 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Destigo - Sistem Pemesanan Tiket Destinasi Wisata
+## 1. Deskripsi Destigo
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Destigo adalah aplikasi web berbasis Laravel yang digunakan untuk melakukan pemesanan tiket destinasi wisata lokal maupun internasional. Aplikasi ini dirancang untuk memudahkan pengguna dalam melihat informasi destinasi wisata, memesan tiket, melakukan pembayaran, serta mendapatkan e-ticket. Selain itu, aplikasi ini menyediakan dashboard admin untuk mengelola data negara, destinasi wisata, pemesanan, pembayaran, dan pengguna.
 
-## About Laravel
+Project ini dibuat untuk memenuhi tugas UAS mata kuliah Pemrograman Berbasis Web (PBW).
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 2. Tujuan Destigo
+Tujuan dibuatnya aplikasi Destigo adalah:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+  - Mempermudah proses pemesanan tiket wisata secara online
+  - Menyediakan informasi destinasi wisata berdasarkan negara
+  - Mempermudah admin dalam mengelola data wisata
+  - Menyediakan sistem e-ticket digital
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 3. Fitur Aplikasi
+Fitur User
 
-## Learning Laravel
+  - Register akun
+  - Login akun
+  - Melihat daftar negara wisata
+  - Melihat daftar destinasi wisata
+  - Melihat detail destinasi
+  - Memesan tiket wisata
+  - Mengisi data pengunjung
+  - Sistem perhitungan harga otomatis
+  - Simulasi pembayaran
+  - Mendapatkan e-ticket
+  - QR Code tiket
+  - Logout akun
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+Fitur Admin
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+  - Login admin
+  - Dashboard admin
+  - Statistik jumlah negara
+  - Statistik jumlah destinasi
+  - Statistik jumlah pemesanan
+  - Statistik pembayaran
+  - Statistik user
+  - CRUD data negara
+  - CRUD data destinasi wisata
+  - Melihat data booking
+  - Melihat data pembayaran
+  - Monitoring aktivitas sistem
+    
+## 4. Teknologi yang digunakan
+Framework dan tools yang digunakan:
 
-## Laravel Sponsors
+  - Laravel 12
+  - PHP 8.2
+  - MySQL
+  - Blade Template Engine
+  - Tailwind CSS
+  - Laravel Breeze
+  - Simple QR Code
+  - Vite
+  - Composer
+  - XAMPP
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 5. Struktur Database
 
-### Premium Partners
+Aplikasi ini menggunakan beberapa tabel utama:
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Tabel utama:
+  - users
+  - countries
+  - destinations
+  - bookings
+  - visitors
+  - payments
+  - sessions
+    
+Tabel bawaan Laravel:
+  - cache
+  - cache_locks
+  - jobs
+  - job_batches
+  - failed_jobs
+  - migrations
+  - password_reset_tokens
 
-## Contributing
+## 6. Alur Sistem
+### User
+1. Register akun
+2. Login ke sistem
+3. Pilih negara tujuan
+4. Pilih destinasi wisata
+5. Lihat detail destinasi
+6. Booking tiket
+7. Isi data pengunjung
+8. Lakukan pembayaran
+9. Dapatkan e-ticket beserta QR Code
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Admin
+1. Login sebagai admin
+2. Masuk ke dashboard admin
+3. Kelola data negara
+4. Kelola data destinasi
+5. Melihat data booking
+6. Melihat data pembayaran
+7. Monitoring aktivitas sistem
 
-## Code of Conduct
+## 7. Instalasi Project
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+#### 1. Clone Repository
 
-## Security Vulnerabilities
+   git clone https://github.com/username/destigo.git
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+   cd destigo
 
-## License
+#### 2. Install Dependency
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+    composer install
+    npm install
+
+#### 3. Copy File Environment
+   
+    cp .env.example .env
+
+#### 4. Generate Application Key
+
+    php artisan key:generate
+
+#### 5. Konfigurasi Database
+
+    Edit file .env
+  
+      DB_CONNECTION=mysql
+      DB_HOST=127.0.0.1
+      DB_PORT=3306
+      DB_DATABASE=destigo_db
+      DB_USERNAME=root
+      DB_PASSWORD=
+
+#### 6. Import Database
+
+    Import file:
+  
+    destigo_db.sql
+  
+    atau jalankan migration:
+  
+    php artisan migrate
+
+#### 7. Buat Storage Link
+
+    php artisan storage:link
+
+#### 8. Jalankan Project
+
+    php artisan serve
+    npm run dev
+
+    Buka browser:
+
+    http://127.0.0.1:8000
+
+## 8. Akun Demo
+
+  Admin
+
+Email: admin@gmail.com
+
+Password: destigo123
+
+## 9. Struktur Folder Project
+
+## 10. Cara Penggunaan
+
+1. User
+  - Register akun baru
+  - Login ke sistem
+  - Pilih negara tujuan
+  - Pilih destinasi wisata
+  - Isi jumlah tiket
+  - Isi data pengunjung
+  - Lakukan pembayaran
+  - Dapatkan e-ticket
+    
+    
+2. Admin
+  - Login sebagai admin
+  - Kelola data negara
+  - Kelola data destinasi
+  - Pantau pemesanan tiket
+  - Pantau pembayaran user
+  - Lihat statistik sistem
+
+## 11. Author
+Nama: Cut Farah Salsabila
+
+NPM: 2408107010100
+
+Mata Kuliah: Pemrograman Berbasis Web (A)

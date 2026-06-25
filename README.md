@@ -1,7 +1,7 @@
 # Destigo - Sistem Pemesanan Tiket Destinasi Wisata
 ## 1. Deskripsi Destigo
 
-Destigo adalah aplikasi web berbasis Laravel yang digunakan untuk melakukan pemesanan tiket destinasi wisata lokal maupun internasional. Aplikasi ini dirancang untuk memudahkan pengguna dalam melihat informasi destinasi wisata, memesan tiket, melakukan pembayaran, serta mendapatkan e-ticket. Selain itu, aplikasi ini menyediakan dashboard admin untuk mengelola data negara, destinasi wisata, pemesanan, pembayaran, dan pengguna.
+Destigo adalah aplikasi web berbasis Laravel yg digunakan untuk melakukan pemesanan tiket destinasi wisata lokal maupun internasional. Aplikasi ini dirancang untuk memudahkan pengguna dalam melihat informasi destinasi wisata, memesan tiket, melakukan pembayaran, serta mendapatkan e-ticket. Selain itu, aplikasi ini menyediakan dashboard admin untuk mengelola data negara, destinasi wisata, pemesanan, pembayaran, dan pengguna.
 
 Project ini dibuat untuk memenuhi tugas UAS mata kuliah Pemrograman Berbasis Web (PBW).
 
